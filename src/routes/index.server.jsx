@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <Layout>
       <Suspense>
-        <Page path="/hydrogen-demo" cachingStrategy={CacheNone()} />
+        <Page path="/pages/color" cachingStrategy={CacheNone()} />
       </Suspense>
     </Layout>
   );

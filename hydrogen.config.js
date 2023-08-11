@@ -9,8 +9,10 @@ export default defineConfig({
     defaultLanguageCode: "EN",
     defaultCountryCode: "US",
     storeDomain:
-      "nino-sandbox.myshopify.com" || Oxygen.env.SHOPIFY_STORE_DOMAIN,
-    storefrontToken: Oxygen.env.SHOPIFY_STOREFRONT_API_PUBLIC_TOKEN,
+      Oxygen.env.SHOPIFY_STORE_DOMAIN || "nino-sandbox.myshopify.com",
+    storefrontToken:
+      Oxygen.env.SHOPIFY_STOREFRONT_API_PUBLIC_TOKEN ||
+      "a898ce6a0c8bd5c075f92d0fc4976b96",
     storefrontApiVersion: "2022-07",
   }),
   session: CookieSessionStorage("__session", {
